@@ -1,4 +1,3 @@
-cadobot
-=======
+An irc bot in Ruby using cinch. 
 
-irc bot written in ruby, using cinch
+To be extended. 
