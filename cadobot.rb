@@ -9,6 +9,17 @@ cadobot = Cinch::Bot.new do
 	on :message, "hello" do |m|
 		m.reply "hello to you too" 
 	end
+
+	# On join event 
+	# on :join, /^gr[e3]g.?$/	do |m|
+	on :join do |m|	
+		m.reply "Hi Greg"
+	end
+
+	# On asking if franziska is there	
+	on :message, /^[Ff]ranziska[?]?$/ do |m|
+		m.reply "She is not here."
+	end
 end
 
 cadobot.start
