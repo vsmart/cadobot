@@ -11,6 +11,7 @@ cadobot = Cinch::Bot.new do
 	end
 
 	# On join event 
+
 	on :join do |m|
 		m.reply "Someone joined" 
 		if (m.user.nick != @bot.nick)
